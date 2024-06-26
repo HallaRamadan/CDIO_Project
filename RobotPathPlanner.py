@@ -6,7 +6,7 @@ import os
 
 # Load the model and image
 model = YOLO("models/best.pt")
-original_image_path = "Datasats/Images/IMG_3820.JPG"
+original_image_path = "Datasats/Images/IMG_3814.JPG"
 results = model(source=original_image_path, conf=0.5, show=False, save=True)
 
 # Extract bounding boxes and labels from results
